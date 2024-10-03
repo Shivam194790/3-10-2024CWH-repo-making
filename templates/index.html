@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni Association</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-image: url('https://example.com/your-background-image.jpg');
+            background-size: cover;
+            /* color: white; */
+        }
+        .card {
+            background-color: rgba(0, 0, 0, 0.5);
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">Alumni Association</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('register') }}">Register</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('donate') }}">Donate</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('networking') }}">Networking</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('jobs') }}">Jobs</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('events') }}">Events</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container mt-5 pt-5">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card mb-4 bg-light shadow p-3 mb-5 bg-body rounded">
+                <div class="card-body">
+                    <h5 class="card-title ">Connect with Peers</h5>
+                    <p class="card-text ">Join our networking hub to connect with fellow alumni, share experiences, and grow your professional network.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4 bg-light shadow p-3 mb-5 bg-body rounded">
+                <div class="card-body">
+                    <h5 class="card-title">Job Opportunities</h5>
+                    <p class="card-text">Explore job openings and post available positions in our alumni job portal designed just for you.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4 bg-light shadow p-3 mb-5 bg-body rounded">
+                <div class="card-body">
+                    <h5 class="card-title">Success Stories</h5>
+                    <p class="card-text">Celebrate the achievements of our alumni. Share your success stories and inspire current students.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 ">
+            <div class="card mb-4 bg-light shadow p-3 mb-5 bg-body rounded">
+                <div class="card-body">
+                    <h5 class="card-title">Upcoming Events</h5>
+                    <p class="card-text">Stay updated on alumni events, workshops, and reunions. Join us to reconnect and learn!</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4 bg-light shadow p-3 mb-5 bg-body rounded">
+                <div class="card-body">
+                    <h5 class="card-title">Donation Portal</h5>
+                    <p class="card-text">Support our college initiatives through donations. Your contributions make a difference!</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4 bg-light shadow p-3 mb-5 bg-body rounded">
+                <div class="card-body">
+                    <h5 class="card-title">Get Involved</h5>
+                    <p class="card-text">Join committees, volunteer for events, and contribute to the growth of our alumni network.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="px-2 py-2 my-2 text-center">
+        <img class="d-block mx-auto mb-4" src="/static/images/OIP.jpeg" alt="" width="500" height="300">
+        <h1 class="display-5 fw-bold text-body-emphasis">Alumini Network</h1>
+        <div class="col-sm-10 mx-auto">
+          <p class="lead mb-4">Welcome to Jawaharlal Nehru university Alumni Network
+            Connect, Engage, and Inspire!
+            Join a thriving community where alumni and students come together to share experiences, network, and support one another. Discover opportunities, events, and resources designed to empower your journey.
+            
+            Get Started!.</p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <!-- <button type="button" class="btn btn-success btn-lg  gap-5 mr-2">Register as an Alumini</button> -->
+            <a href="{{ url_for('login') }}" class="btn btn-success btn-lg gap-5 mr-2">Register as an Alumni</a>
+            <button type="button" class="btn btn-outline-secondary btn-lg ">Register as a student</button>
+          </div>
+        </div>
+      </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
